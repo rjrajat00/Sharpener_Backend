@@ -16,7 +16,7 @@ app.use("/admin", adminRoutes);
 app.use(shopRoutes);
 
 app.use((req, res, next) => {
-  res.sendFile(path.join(__dirname, "../", "views", "error.html"));
+  res.sendFile(path.join(__dirname, "views", "error.html"));
 });
 
 app.listen(5000, () => {
